@@ -1,0 +1,11 @@
+README.md
+setup.py
+seminar1_project/__init__.py
+seminar1_project/extra_module.py
+seminar1_project/module.py
+seminar1_project.egg-info/PKG-INFO
+seminar1_project.egg-info/SOURCES.txt
+seminar1_project.egg-info/dependency_links.txt
+seminar1_project.egg-info/not-zip-safe
+seminar1_project.egg-info/requires.txt
+seminar1_project.egg-info/top_level.txt
