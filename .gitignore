@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+**/.DS_Store
+*.pptx
+.ipynb_checkpoints/
+hw01/checker.py
+
