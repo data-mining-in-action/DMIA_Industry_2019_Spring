@@ -1,0 +1,5 @@
+ny_taxi_fare_1m.csv filter=lfs diff=lfs merge=lfs -text
+amazon.csv filter=lfs diff=lfs merge=lfs -text
+mushrooms.csv filter=lfs diff=lfs merge=lfs -text
+HR.csv filter=lfs diff=lfs merge=lfs -text
+titanic.csv filter=lfs diff=lfs merge=lfs -text
