@@ -1,0 +1,8 @@
+{
+    "author_email": "ivanov@gmail.com",
+    "learning_rate": 0.1, 
+    "max_depth": 5, 
+    "n_estimators": 1000, 
+    "min_child_weight": 3,
+    "seed": 42
+}
