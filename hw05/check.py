@@ -14,9 +14,9 @@ if __name__ == '__main__':
             name, score = checker.check(folder_path + filename)
             print(name, score)
             if name is not None and score is not None:
-                print('score is', max(round(2 ** (6 * (score - 2.8)), 2), 0.05))
+                print('score is', min(max(round(2 ** (6 * (score - 2.8)), 2), 0.05), 2))
                 results[name] = score
-            else:
+            elif name is not None:
                 scores[name] = 0.05
 
     best_accuracy = max(results.values())
