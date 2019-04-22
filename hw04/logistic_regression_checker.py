@@ -22,7 +22,7 @@ class Checker(object):
             n_samples=10000, n_features=20, 
             n_classes=2, n_informative=20, 
             n_redundant=0,
-            random_state=42
+            random_state=75
         )
         self.applications = 0
 

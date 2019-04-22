@@ -16,7 +16,7 @@ if __name__ == '__main__':
             if name is not None and score is not None:
                 print('score is', max(round(score / 7.5, 2), 0.05))
                 results[name] = score
-            else:
+            elif name is not None:
                 scores[name] = 0.05
 
     best_accuracy = max(results.values())

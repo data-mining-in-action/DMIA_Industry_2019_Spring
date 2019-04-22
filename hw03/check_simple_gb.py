@@ -16,7 +16,7 @@ if __name__ == '__main__':
             print(name, score)
             if name is not None and score is not None:
                 results[name] = score
-            else:
+            elif name is not None:
                 scores[name] = 0.025
 
     best_neg_mse = max(results.values())
