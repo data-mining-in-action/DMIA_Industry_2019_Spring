@@ -27,7 +27,7 @@ class Checker(object):
         AUTHOR_EMAIL = None
         try:
             signal.signal(signal.SIGALRM, signal_handler)
-            signal.alarm(120)
+            signal.alarm(240)
             algo_impl = imp.load_source('algo_impl_{}'.format(self.applications), script_path)
             self.applications += 1
             AUTHOR_EMAIL = algo_impl.AUTHOR_EMAIL
@@ -36,7 +36,7 @@ class Checker(object):
             saved_moneys = 0.
 
             random_gen = np.random.RandomState(68)
-            for _ in range(10):
+            for _ in range(5):
                 weights = (0.05 + random_gen.exponential(0.75, size=15)) * 2
                 X_data = random_gen.uniform(0., 4, size=(40, 15))
                 errors = random_gen.normal(0., 2., size=40)
@@ -58,7 +58,7 @@ class Checker(object):
                         if np.dot(optimized_budget, weights) >=  np.dot(origin_budget, weights):
                             saved_moneys += np.sum(origin_budget) - np.sum(optimized_budget)
 
-            return AUTHOR_EMAIL, saved_moneys / 10.
+            return AUTHOR_EMAIL, saved_moneys / 5.
         except:
             traceback.print_exception(*sys.exc_info())
             return AUTHOR_EMAIL, None
