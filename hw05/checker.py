@@ -72,7 +72,7 @@ class Checker(object):
 
             print(correctness, power_005, power_010, power_050)
 
-            return AUTHOR_EMAIL, power_050 + power_010 * 4 + power_005 * 16
+            return AUTHOR_EMAIL, float(power_050 + power_010 * 4 + power_005 * 16)
         except:
             traceback.print_exception(*sys.exc_info())
             return AUTHOR_EMAIL, None
